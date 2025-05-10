@@ -1,5 +1,5 @@
 """
-Drone control template.
+Drone control template. Run this file to submit your solution!
 TODO: Add your username, and implement the control code in `control_drone`.
 """
 
@@ -47,7 +47,6 @@ class DroneClient:
         min_target_pos = self.goal_region.minimal_point
         print(f"Target minimal position: ", min_target_pos.x, min_target_pos.y, min_target_pos.z)
 
-        print(f"Start of control_drone. Target position: ", self.goal_region.maximal_point.x, self.goal_region.y, self.goal_region.z)
         # TODO: Implement your control process here!
         throttle = 0
         pitch = 0
@@ -103,6 +102,6 @@ if __name__ == "__main__":
     # TODO: add your username
     username = None
     if username is None:
-        raise ValueError("No username provided - add your name here!")
+        raise ValueError("No username provided!")
     dc = DroneClient(host, port, username)
     dc.start()
