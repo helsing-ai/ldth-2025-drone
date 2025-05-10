@@ -15,6 +15,8 @@ Then, use your preferred language and go!
 ## Using the template (optional)
 
 Beyond the instructions above, you can also clone this repository and use it as a starter template. It's a `nix`-powered Rust project that should save you some time setting things up.
+There is also a Python template in py-src. It project uses `uv` for dependency management.
+See [installing uv](https://docs.astral.sh/uv/getting-started/installation/) and then run `uv sync` to setup your venv.
 
 > [!TIP]
 > Using this template is completely optional. If you want to start from scratch and fight dependencies yourself, go for it!
